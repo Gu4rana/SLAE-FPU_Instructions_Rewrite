@@ -73,7 +73,8 @@ FPU Instructions:
 
 In our case fnstenv will store the environments at esp-0xc, which will luckily allow us to get the instruction pointer at address of esp after fnstenv instruction.
 
-Refer to: ![]('./FPU_State_Image.png')
+Refer to: 
+[!](./FPU_State_Image.png)
 According to Intel FPU state image in momery, the instruction pointer offset is at the position of third double word. 
 pop esi will get the address of fldpi
 
